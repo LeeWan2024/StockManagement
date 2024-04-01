@@ -4,12 +4,12 @@ This document outlines the structure and functionality of the Stock Management C
 
 ### `Model.cs` - Model
 
-Hosts the data structures and static data used by the application, including the representation of stock items and a static list for storing and managing them.
+Hosts the data structures and static data used by the application.
 
 
 ### `Queries.cs` - Queries
 
-Contains only one class: `QueryLibrary`, including methods for querying the stock items from the static data, enabling functionality to display stock information and summaries.
+Contains only one class: `QueryLibrary`, including methods for querying and displaying the stock items from the static data.
 
 
 ### `Program.cs` - Program
@@ -20,11 +20,11 @@ Acts as the entry point to the application, initializing it with data and managi
 ### `views.cs` - Views
 
 This is the major working file. Defines the user interface and interaction flow of the application.
-Actions like adding or removing stock items, and viewing stock summaries are included in the corresponding classes.
+Actions like adding or removing stock items, and viewing stock summaries are included in the corresponding classes as well.
 
 #### Key Components
 
-- **`IViews` Interface**: Outlines methods (`RunView`, `HeaderView`, `ContentsView`, `ExitView`), which is the structures that all classes follow.
+- **`IViews` Interface**: Outlines methods (`RunView`, `HeaderView`, `ContentsView`, `ExitView`), which is the structure that all classes follow. See below. Other private methods might be included to modularise codes. 
 ```
     public interface IViews
     {
