@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|solutionrelative:stockmanagementconsoleapp\\views.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|c:\\users\\leewa\\source\\repos\\stockmanagementconsoleapp\\stockmanagementconsoleapp\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|solutionrelative:stockmanagementconsoleapp\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|c:\\users\\leewa\\source\\repos\\stockmanagementconsoleapp\\stockmanagementconsoleapp\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|solutionrelative:stockmanagementconsoleapp\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|c:\\users\\leewa\\source\\repos\\stockmanagementconsoleapp\\stockmanagementconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|solutionrelative:stockmanagementconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|c:\\users\\leewa\\source\\repos\\stockmanagementconsoleapp\\stockmanagementconsoleapp\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F8B0668-FF8E-4A42-ADC7-9D6BDD2021AD}|StockManagementConsoleApp\\StockManagementConsoleApp.csproj|solutionrelative:stockmanagementconsoleapp\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "StockManagementConsoleApp\\Views.cs",
               "ToolTip": "C:\\Users\\leewa\\source\\repos\\StockManagementConsoleApp\\StockManagementConsoleApp\\Views.cs",
               "RelativeToolTip": "StockManagementConsoleApp\\Views.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T13:02:32.815Z",
               "IsPinned": true,
@@ -48,39 +48,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Queries.cs",
               "DocumentMoniker": "C:\\Users\\leewa\\source\\repos\\StockManagementConsoleApp\\StockManagementConsoleApp\\Queries.cs",
               "RelativeDocumentMoniker": "StockManagementConsoleApp\\Queries.cs",
               "ToolTip": "C:\\Users\\leewa\\source\\repos\\StockManagementConsoleApp\\StockManagementConsoleApp\\Queries.cs",
               "RelativeToolTip": "StockManagementConsoleApp\\Queries.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T13:14:10.494Z"
+              "WhenOpened": "2024-04-01T13:14:10.494Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Model.cs",
               "DocumentMoniker": "C:\\Users\\leewa\\source\\repos\\StockManagementConsoleApp\\StockManagementConsoleApp\\Model.cs",
               "RelativeDocumentMoniker": "StockManagementConsoleApp\\Model.cs",
               "ToolTip": "C:\\Users\\leewa\\source\\repos\\StockManagementConsoleApp\\StockManagementConsoleApp\\Model.cs",
               "RelativeToolTip": "StockManagementConsoleApp\\Model.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAsAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBYAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T13:02:03.023Z"
+              "WhenOpened": "2024-04-01T13:02:03.023Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\leewa\\source\\repos\\StockManagementConsoleApp\\StockManagementConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "StockManagementConsoleApp\\Program.cs",
               "ToolTip": "C:\\Users\\leewa\\source\\repos\\StockManagementConsoleApp\\StockManagementConsoleApp\\Program.cs",
               "RelativeToolTip": "StockManagementConsoleApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T13:01:17.789Z"
+              "WhenOpened": "2024-04-01T13:01:17.789Z",
+              "EditorCaption": ""
             }
           ]
         }

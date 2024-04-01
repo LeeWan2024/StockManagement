@@ -6,20 +6,28 @@ using System.Threading.Tasks;
 
 namespace StockManagementConsoleApp
 {
+    /*
+     This file contains one interface and three classes:
+
+    `IViews` Interface: Outlines methods (`RunView`, `HeaderView`, `ContentsView`, `ExitView`), which is the structure that all classes follow.
+
+    `MainView` Class: Serves as the application's main page, showing a summary of stock movements.
+    `StockAddView` Class: Manages the addition of new stock items.
+    `StockRemoveView` Class: Enables users to remove items from the inventory.
+     */
 
     public interface IViews
     {
-        public void RunView();
-        public void HeaderView();
-        public void ContentsView();
-        public void ExitView();
+        public void RunView();        //invokes HeaderView(), ContentsView(), and ExitView().
+        public void HeaderView();     //generates headers and main tables
+        public void ContentsView();   //includes actions like adding, removing or viewing stock summaries.
+        public void ExitView();       //allows users to jump to different views.
     }
 
 
     public class MainView : IViews
     {
         public QueryLibrary _queryLibrary = new QueryLibrary();
-
         public void RunView()
         {
             HeaderView();
@@ -31,13 +39,12 @@ namespace StockManagementConsoleApp
             Console.Clear();
             string heading =("Stock Management System Main Page");
             Console.WriteLine($"{heading}{Environment.NewLine}{new string('-', heading.Length)}");
-            _queryLibrary.TableHistoryStock();
+            _queryLibrary.DisplayHistoryTransaction();
         }
-
         public void ContentsView()
         {
             Console.WriteLine();
-            _queryLibrary.TableSummary();
+            _queryLibrary.DisplayAggregateSummary();
         }
         public void ExitView()
         {
@@ -61,7 +68,7 @@ namespace StockManagementConsoleApp
             Console.Clear();
             string heading = ("ADD STOCKS");
             Console.WriteLine($"{heading}{Environment.NewLine}{new string('-', heading.Length)}");
-            _queryLibrary.TableAvailableStock();
+            _queryLibrary.DisplayStockAvailable();
         }
         public void ContentsView()
         {
@@ -127,7 +134,7 @@ namespace StockManagementConsoleApp
             Console.Clear();
             string heading = ("REMOVE STOCKS");
             Console.WriteLine($"{heading}{Environment.NewLine}{new string('-', heading.Length)}");
-            _queryLibrary.TableAvailableStock();
+            _queryLibrary.DisplayStockAvailable();
         }
         public void ContentsView()
         {

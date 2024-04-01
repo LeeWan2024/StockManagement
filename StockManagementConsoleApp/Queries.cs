@@ -8,12 +8,18 @@ using System.Threading.Tasks;
 
 namespace StockManagementConsoleApp
 {
+    /*
+     
+    This file contains one class: QueryLibrary.
+        DisplayStockAvailable(): perfoms a self join, selects items not in "Stock out".
+        DisplayHistoryTransaction(): performs a left join, adds dates when stocks are removed(sold).
+        DisplayAggregateSummary(): performs a group select, group by brand.
 
-
+     */
     public class QueryLibrary
     {
         public List<StockItem> _stocks { get=>StaticData.StockTable; }
-        public void TableAvailableStock()
+        public void DisplayStockAvailable()
         {
             Console.WriteLine("Available Stock Table:");
             Console.WriteLine("ID\tBrand\tCost\tDate added");
@@ -29,9 +35,9 @@ namespace StockManagementConsoleApp
             }
             Console.WriteLine($"Avaible stock count: {stockAvailableTable.Count()}");
         }
-        public void TableHistoryStock()
+        public void DisplayHistoryTransaction()
         {
-            var leftJoinTable = from inTable in _stocks.Where(s => s.Movement == "Stock in").ToList()
+            var historyTable = from inTable in _stocks.Where(s => s.Movement == "Stock in").ToList()
                                 join outTable in _stocks.Where(s => s.Movement == "Stock out").ToList()
                                     on inTable.ProductId equals outTable.ProductId into outGroup
                                 from outItem in outGroup.DefaultIfEmpty()
@@ -46,12 +52,12 @@ namespace StockManagementConsoleApp
             Console.WriteLine();
             Console.WriteLine("Stock Movement Records");
             Console.WriteLine("ID\tBrand\tCost\tDate added\tDate sold");
-            foreach (var item in leftJoinTable)
+            foreach (var item in historyTable)
             {
                 Console.WriteLine($"{item.ProductId}\t{item.Brand}\t{item.Cost}\t{item.DateAdded.ToShortDateString()}\t{item.DateRemoved}");
             }
         }
-        public void TableSummary()
+        public void DisplayAggregateSummary()
         {
             var summaryTable = _stocks
                                 .GroupBy(item => item.Brand)
@@ -79,5 +85,4 @@ namespace StockManagementConsoleApp
             return matchedItem;
         }
     }
-
 }
